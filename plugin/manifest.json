@@ -1,0 +1,34 @@
+{
+    "name": "LINCS Context Plugin",
+    "description": "This is a browser extension that searches webpages for entities in the LINCS triple store.",
+    "version": "1.1.2",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "/js/background.js"
+    },
+    "content_scripts": [
+        {
+          "js": ["/js/content.js", "/js/d3.min.js"],
+          "css" : ["/css/content.css"],
+          "matches": ["<all_urls>"]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "/html/popup.html",
+        "default_icon": {
+            "16": "/assets/images/icon-16.png",
+            "32": "/assets/images/icon-32.png",
+            "48": "/assets/images/icon-48.png",
+            "128": "/assets/images/icon-128.png"
+        }
+    },
+    "icons": {
+        "16": "/assets/images/icon-16.png",
+        "32": "/assets/images/icon-32.png",
+        "48": "/assets/images/icon-48.png",
+        "128": "/assets/images/icon-128.png"
+    }
+}

@@ -1,0 +1,12 @@
+#lincs-svg-display {
+    position: absolute;
+    z-index: 2147483646;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+}
+
+#lincs-svg-display * {
+    pointer-events: auto;
+}
+  

@@ -1,0 +1,122 @@
+<html class="popup-height">
+    <head>
+        <link rel="stylesheet" href="../css/popup.css">
+    </head>
+
+    <body class="main-section">
+        <div class="main-box">
+            <div id="main-header">
+                <div class="header-box">
+                    <div class="logo-panel">
+                        <img src="../assets/images/icon-128.png" class="h-logo">
+                        <h3><span>LINCS</span> Context Plugin</h3>
+                    </div>
+                    <a class="setting-link" id="settings-icon">
+                        <img class="s-icon" src="../assets/svgs/settings.svg" />
+                    </a>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div id="main-menu" class="main-menu-show">
+                    <div id="currently-reading">
+                        <div class="title-panel">
+                            <h3 class="title-text">Currently reading</h3>
+                            <div class="icon-title">
+                                <!-- <img src="../assets/images/article.png" class="icon-b" /> -->
+                                <h4 id="article-title">
+                                    <span id="article-title-tooltip" class="article-tooltip"></span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-panel">
+                        <ul>
+                            <li id="get-filter">
+                                <a class="feature-link">Filter
+                                    <img src="../assets/svgs/collapsed.svg" class="f-icon" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button-panel">
+                        <button class="btn btn-primary" id="highlighted-scan-button">Scan Highlighted</button>
+                        <button class="btn btn-secondary" type="button" id="full-scan-button">Scan Whole Page</button>
+                    </div>
+                </div>
+                <div id="loader-block" class="loader-block">
+                    <div class="spinner" id="loading-bar-spinner">
+                        <div class="spinner-icon"></div>
+                    </div>
+                </div>
+                <div class="feature-panel panel-hide" id="onLoadFilters">
+                    <a class="feature-link back-btn" id="filters-back-button">
+                        <img class="back-icon" src="../assets/svgs/back-arrow.svg" />Back
+                    </a>
+                    <ul>
+                        <li>
+                            <a id="entity-type-filter" class="feature-link collapse-btn active">NER Type
+                                <img src="../assets/svgs/upward-arrow.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <div class="filter-data-show">
+                                <div class="feature-text">Search Entities By Text: </div>
+                                <ul id="show-filters"></ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a id="dataset-filter" class="feature-link collapse-btn active">Dataset
+                                <img src="../assets/svgs/upward-arrow.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <div class="filter-data-show">
+                                <div class="feature-text">Search Entities By Dataset: </div>
+                                <ul id="show-graph-filters"></ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="feature-panel setting-panel" id="settings-panel">
+            <div class="header-box">
+                <div class="logo-panel">
+                    <img src="../assets/images/icon-128.png" class="h-logo">
+                    <h3>Settings</h3>
+                </div>
+            </div>
+            <a class="feature-link back-btn" id="settings-back-button">
+                <img class="back-icon" src="../assets/svgs/back-arrow.svg">Back
+            </a>
+            <!-- <ul>
+                <li>
+                    <a class="feature-link collapse-btn active">Display Settings
+                        <img src="../assets/svgs/upward-arrow.svg">
+                    </a>
+                </li>
+                <li>
+                    <div class="filter-data-show">
+                        <div class="feature-text">Option descriptor </div>
+                    </div>
+                </li>
+            </ul> -->
+            <ul>
+                <li>
+                    <a id="highlight-setting" class="feature-link collapse-btn active">Highlight Settings
+                        <img src="../assets/svgs/upward-arrow.svg">
+                    </a>
+                </li>
+                <li>
+                    <div class="filter-data-show">
+                        <div class="feature-text">Option descriptor </div>
+                        <ul id="show-highlight-settings"> </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script src="../js/popup.js"></script>
+    </body>
+</html>
